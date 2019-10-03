@@ -1,0 +1,80 @@
+{
+	"name": "DelimitedText6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BTS_vwSKU.csv",
+				"fileSystem": "incoming"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "serial_number",
+				"type": "String"
+			},
+			{
+				"name": "timestamp",
+				"type": "String"
+			},
+			{
+				"name": "date_partition",
+				"type": "String"
+			},
+			{
+				"name": "alias",
+				"type": "String"
+			},
+			{
+				"name": "sku_container_type",
+				"type": "String"
+			},
+			{
+				"name": "sku_num_of_layers",
+				"type": "String"
+			},
+			{
+				"name": "sku_recipe_nr",
+				"type": "String"
+			},
+			{
+				"name": "sku_layer_length",
+				"type": "String"
+			},
+			{
+				"name": "sku_active",
+				"type": "String"
+			},
+			{
+				"name": "sku_sku",
+				"type": "String"
+			},
+			{
+				"name": "sku_max_dwell",
+				"type": "String"
+			},
+			{
+				"name": "sku_containers_per_layer",
+				"type": "String"
+			},
+			{
+				"name": "sku_min_process",
+				"type": "String"
+			},
+			{
+				"name": "sku_sku_descr",
+				"type": "String"
+			}
+		]
+	}
+}
