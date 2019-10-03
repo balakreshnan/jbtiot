@@ -1,0 +1,112 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BTS_vwBatches.csv",
+				"fileSystem": "incoming"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "serial_number",
+				"type": "String"
+			},
+			{
+				"name": "timestamp",
+				"type": "String"
+			},
+			{
+				"name": "date_partition",
+				"type": "String"
+			},
+			{
+				"name": "alias",
+				"type": "String"
+			},
+			{
+				"name": "batches_retort_cycle",
+				"type": "String"
+			},
+			{
+				"name": "batches_cool_end",
+				"type": "String"
+			},
+			{
+				"name": "batches_cut_end",
+				"type": "String"
+			},
+			{
+				"name": "batches_completed",
+				"type": "String"
+			},
+			{
+				"name": "batches_ret_start_load",
+				"type": "String"
+			},
+			{
+				"name": "batches_sku",
+				"type": "String"
+			},
+			{
+				"name": "batches_ret_end_load",
+				"type": "String"
+			},
+			{
+				"name": "batches_cut_start",
+				"type": "String"
+			},
+			{
+				"name": "batches_ret_start_unload",
+				"type": "String"
+			},
+			{
+				"name": "batches_cool_start",
+				"type": "String"
+			},
+			{
+				"name": "batches_batch_id",
+				"type": "String"
+			},
+			{
+				"name": "batches_retort",
+				"type": "String"
+			},
+			{
+				"name": "batches_process_end",
+				"type": "String"
+			},
+			{
+				"name": "batches_restarted",
+				"type": "String"
+			},
+			{
+				"name": "batches_process_start",
+				"type": "String"
+			},
+			{
+				"name": "batches_ret_end_unload",
+				"type": "String"
+			},
+			{
+				"name": "batches_aborted",
+				"type": "String"
+			},
+			{
+				"name": "batches_reviewed_on",
+				"type": "String"
+			}
+		]
+	}
+}
