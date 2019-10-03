@@ -1,0 +1,104 @@
+{
+	"name": "DelimitedText5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BTS_vwProduction2.csv",
+				"fileSystem": "incoming"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "serial_number",
+				"type": "String"
+			},
+			{
+				"name": "timestamp",
+				"type": "String"
+			},
+			{
+				"name": "date_partition",
+				"type": "String"
+			},
+			{
+				"name": "alias",
+				"type": "String"
+			},
+			{
+				"name": "production_unloader_in_alarm",
+				"type": "String"
+			},
+			{
+				"name": "production_unloader_in_auto",
+				"type": "String"
+			},
+			{
+				"name": "production_waiting_for_empty_baskets",
+				"type": "String"
+			},
+			{
+				"name": "production_waiting_for_full_baskets",
+				"type": "String"
+			},
+			{
+				"name": "production_start_of_production",
+				"type": "String"
+			},
+			{
+				"name": "production_production_id",
+				"type": "String"
+			},
+			{
+				"name": "production_end_of_production",
+				"type": "String"
+			},
+			{
+				"name": "production_waiting_for_downstream",
+				"type": "String"
+			},
+			{
+				"name": "production_loader_in_auto",
+				"type": "String"
+			},
+			{
+				"name": "production_containers_loaded",
+				"type": "String"
+			},
+			{
+				"name": "production_mhs",
+				"type": "String"
+			},
+			{
+				"name": "production_loader_in_alarm",
+				"type": "String"
+			},
+			{
+				"name": "production_time_entered",
+				"type": "String"
+			},
+			{
+				"name": "production_sku",
+				"type": "String"
+			},
+			{
+				"name": "production_containers_unloaded",
+				"type": "String"
+			},
+			{
+				"name": "production_waiting_for_product",
+				"type": "String"
+			}
+		]
+	}
+}
