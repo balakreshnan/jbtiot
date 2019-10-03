@@ -1,0 +1,12 @@
+{
+	"name": "CosmosDb1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "CosmosDb",
+		"typeProperties": {
+			"connectionString": "AccountEndpoint=https://jbttssql.documents.azure.com:443/;Database=jbtiot;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkpCVElPVERBVEFfMDE0NDQ0M2UtYWM2Ni00ZDc2LWFjYjgtNGI4Y2NmMmRjOTA2Ig0KfQ=="
+		}
+	}
+}
