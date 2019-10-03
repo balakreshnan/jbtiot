@@ -1,0 +1,128 @@
+{
+	"name": "DelimitedText4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BTS_vwiOPS1.csv",
+				"fileSystem": "incoming"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "serial_number",
+				"type": "String"
+			},
+			{
+				"name": "timestamp",
+				"type": "String"
+			},
+			{
+				"name": "date_partition",
+				"type": "String"
+			},
+			{
+				"name": "alias",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_basket_out_retort",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_unload_start",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_batch_id",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_unload_end",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_it",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_tray_type",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_loader",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_process_end",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_last_update",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_layers",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_fill_time",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_sku",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_load_end",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_process_start",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_retort",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_load_start",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_unload_entry",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_lifecycle",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_basket_id",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_basket_in_retort",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_basket_status",
+				"type": "String"
+			},
+			{
+				"name": "basket_lifecycles_unloader",
+				"type": "String"
+			}
+		]
+	}
+}
