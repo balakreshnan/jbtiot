@@ -1336,25 +1336,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection1')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "CosmosDb1",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DocumentDbCollection",
-				"typeProperties": {
-					"collectionName": "sampledatapla"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/DelimitedText2')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -1512,25 +1493,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection2')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "CosmosDb1",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DocumentDbCollection",
-				"typeProperties": {
-					"collectionName": "Basket"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/DelimitedText3')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -1645,25 +1607,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection3')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "CosmosDb1",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DocumentDbCollection",
-				"typeProperties": {
-					"collectionName": "Batches"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
 			]
 		},
 		{
@@ -1800,25 +1743,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection4')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "CosmosDb1",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DocumentDbCollection",
-				"typeProperties": {
-					"collectionName": "OPS1"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/DelimitedText5')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -1928,25 +1852,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection5')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "CosmosDb1",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DocumentDbCollection",
-				"typeProperties": {
-					"collectionName": "Production"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/DelimitedText6')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -2032,6 +1937,101 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection1')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "CosmosDb1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DocumentDbCollection",
+				"typeProperties": {
+					"collectionName": "sampledatapla"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection2')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "CosmosDb1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DocumentDbCollection",
+				"typeProperties": {
+					"collectionName": "Basket"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection3')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "CosmosDb1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DocumentDbCollection",
+				"typeProperties": {
+					"collectionName": "Batches"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection4')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "CosmosDb1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DocumentDbCollection",
+				"typeProperties": {
+					"collectionName": "OPS1"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection5')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "CosmosDb1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DocumentDbCollection",
+				"typeProperties": {
+					"collectionName": "Production"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection6')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -2051,62 +2051,7011 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/sampledataplc')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
+			"name": "[concat(parameters('factoryName'), '/DelimitedText7')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"activities": [
+				"linkedServiceName": {
+					"referenceName": "AzureDataLakeStorage1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"fileName": "DSI_SampleData.csv",
+						"fileSystem": "incoming"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
 					{
-						"name": "sampledataplcrotatory",
-						"type": "Copy",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"source": {
-								"type": "DelimitedTextSource",
-								"storeSettings": {
-									"type": "AzureBlobFSReadSettings",
-									"recursive": true
-								},
-								"formatSettings": {
-									"type": "DelimitedTextReadSettings"
-								}
-							},
-							"sink": {
-								"type": "DocumentDbCollectionSink",
-								"nestingSeparator": ".",
-								"writeBehavior": "insert"
-							},
-							"enableStaging": false
-						},
-						"inputs": [
-							{
-								"referenceName": "DelimitedText1",
-								"type": "DatasetReference",
-								"parameters": {}
-							}
-						],
-						"outputs": [
-							{
-								"referenceName": "DocumentDbCollection1",
-								"type": "DatasetReference",
-								"parameters": {}
-							}
-						]
+						"name": "serial_number",
+						"type": "String"
+					},
+					{
+						"name": "timestamp",
+						"type": "String"
+					},
+					{
+						"name": "date_partition",
+						"type": "String"
+					},
+					{
+						"name": "alias",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_last_non-portion_wt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p6_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_pieces_scanned",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_piececount",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "input_numlanes",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "input_scale_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumstdgap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p2_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_gross_yield",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_type",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p4_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumweighscalewt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumsqcutheight",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_processing_avail",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_high_cut_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "procare_scale",
+						"type": "String"
+					},
+					{
+						"name": "min_number_lanes",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p4_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_productweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p3_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_skukey",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_scan_encl_temp_fahrenheit",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p3_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p1_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "agent_mem_used",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p6_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p6_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_skukey",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p5_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_low_cut_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p6_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumcutheight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p4_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p5_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p2_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_appname",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p2_sku",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumcutweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "temperture",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p5_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p3_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p5_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p4_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p4_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_cum_processed_count",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumgap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_high_cut_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_high_cut_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumweighscalewt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumstdgap",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_avg_product_pcs_per_fil",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_piececount",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p4_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_belt_speed",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p2_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "pump_runmin",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_last_non-port'n_wt_lt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "input_fillettype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "pump_run_enable",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p5_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "stats_cum_unprossed_count",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_gap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_side",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_scan_encl_temp",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_cum_product_count",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_low_cut_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "int2_shift_ratio",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p3_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumstdgap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p3_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_pieces_uncut",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_product_lbs_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_uncut_lbs_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "remoteevent",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumsqcutweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumcutweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "input_filletsublane",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p5_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_loading_eff",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "input_filletgap",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumcutterbelttravel",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p6_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_belt_eff",
+						"type": "String"
+					},
+					{
+						"name": "opc_ua_state",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p4_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_last_non-port'n_wt_rt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_appname",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_skukey",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_appname",
+						"type": "String"
+					},
+					{
+						"name": "min_scanned_pieces",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumsqcutweight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_pieces_uncut",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p2_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_processing_avail",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p1_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_appname",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p1_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p1_sku",
+						"type": "String"
+					},
+					{
+						"name": "agent_state",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_application_cap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_product_yield",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumpiecelength",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p2_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_avg_product_pcs_per_min",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_number_products",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_num_products",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p2_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "int2_shift_spm",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumsqcutweight",
+						"type": "String"
+					},
+					{
+						"name": "min_encl_temperature",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "analog_output_0",
+						"type": "String"
+					},
+					{
+						"name": "input_widthmethod",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "min_uncut_pieces",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p5_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p2_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_last_fail_mode",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_appname",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_piececount",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_overall_eff",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumgap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumsqcutheight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p5_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_avg_portion_wt_rt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_cum_processed_weight",
+						"type": "String"
+					},
+					{
+						"name": "agent_mem_total",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_processing_req_ms",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p4_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "min_cut_pieces",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p5_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_avg_portion_wt_lt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumpiecelength",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_cum_product_pcs_per_min",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_processed_wt_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p3_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "mt-v",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_pctyield",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumweighscalewt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_cum_non-portion_wt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p4_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_productvalue",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_product_wt_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_last_portion_wt_lt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_low_cut_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_scan_encl_humid",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p5_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumsqcutheight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p2_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumscannedweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_cum_defect_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p3_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_skukey",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p1_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_sku",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_scan_encl_temp",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_low_cut_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p1_sku",
+						"type": "String"
+					},
+					{
+						"name": "min_ln1_density",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_piececount",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "temperture_2",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_low_cut_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_last_portion_wt_rt",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p3_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_cum_scale_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_gross_yield",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_cum_product_weight_lbs",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_piececount",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_avg_product_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumpiecelength",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "input_ln_2_numsubln",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p6_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "int1_shift_ratio",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_appname",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_cum_scanned_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_low_cut_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p3_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_app_name",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_pieces_cut",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p6_sku",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_sku",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumscannedweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumgap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumcutterbelttravel",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumbelttravel",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumpiecelength",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p6_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p3_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p5_sku",
+						"type": "String"
+					},
+					{
+						"name": "app_events",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_avg_fillet_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "output_numproducts",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_apptype",
+						"type": "String"
+					},
+					{
+						"name": "input_length_method",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p4_product_count",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_cum_scanned_weight_lbs",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_pieces_scanned",
+						"type": "String"
+					},
+					{
+						"name": "min_fillet_number",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_numproducttypes",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_12_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_1_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p6_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "oil_temp",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p5_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumcutheight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_avg_non-port'n_wt_lt",
+						"type": "String"
+					},
+					{
+						"name": "water_temp",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumbelttravel",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_pieces_uncut",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_appname",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "ae-p",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_high_cut_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumsqcutheight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumcutweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p3_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_scan_encl_humid",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p2_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p2_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "min_belt_speed",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p3_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_appname",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_piececount",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p6_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumcutweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_avg_fillet_length",
+						"type": "String"
+					},
+					{
+						"name": "monitor.oil_temp",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_avg_special_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_sku",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumbelttravel",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumsqcutweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_28_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_avg_non-port'n_wt_rt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_19_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumbelttravel",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_low_cut_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_time_to_cutter",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_cum_product_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_avg_portion_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p6_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p6_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p1_sku",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_7_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "pressure_output_display",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p4_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_skukey",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "output_slit_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p1_product_count",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_product_wt_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p6_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_processing_avail_ms",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_scanned_lbs_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_processed_per",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_13_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumcutheight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_28_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "report_events",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_25_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_number_products",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_processed_per",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_scanned_pcs_per_min",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_pieces_cut",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_24_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_processing_req",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_number_products",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_21_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_skukey",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_12_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "min_ln1_number_subln",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p1_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "input_scannedlength",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_appname",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_15_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "sum_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_sumscannedweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_29_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_piececount",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_15_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_last_portion_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p5_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "input_heightmethod",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p1_product_count",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p4_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_low_cut_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p4_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p3_product_count",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_16_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_21_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_cum_scanned_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "sql_state",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "input_scannedheight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_30_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_overall_eff",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "input_scannedweight_lbs",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p5_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_15_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p4_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p1_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "input_filletlane",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p6_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_16_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "agent_cpu_used",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_processed_wt_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_skukey",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p6_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_11_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p3_sku",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p2_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_avg_scanned_weight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_number_products",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_17_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p2_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_piececount",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumstdgap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_22_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_exec_time",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_exec_time",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_appname",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_pieces_scanned",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_27_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_num_products",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_high_cut_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p1_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumgap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "model",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_scanned_wt_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "cv_1l_temp",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_27_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_product_yield",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "can_state",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p4_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_skukey",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p3_product_count",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_app_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_19_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_application_cap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_3_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_8_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_2_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_sumweights",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_25_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p1_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_11_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_19_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_29_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_pieces_cut",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_26_weight",
+						"type": "String"
+					},
+					{
+						"name": "cv_2l_temp",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_4_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_1_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_24_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_19_weight",
+						"type": "String"
+					},
+					{
+						"name": "input_scannedweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_23_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "input_ln_1_numsubln",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_30_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_p4_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_cum_loading_eff",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p1_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_10_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_pieces_scanned",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_13_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_high_cut_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_18_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_18_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumweighscalewt",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_piececount",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_gap",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_18_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_belt_eff",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_17_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_high_cut_height",
+						"type": "String"
+					},
+					{
+						"name": "machine_state",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_25_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_processed_lbs_per_hr",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_5_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s2_sumcutterbelttravel",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_29_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_28_weight",
+						"type": "String"
+					},
+					{
+						"name": "input_scannedwidth",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumcutheight",
+						"type": "String"
+					},
+					{
+						"name": "stats_output_cum_portion_weight",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_avg_process_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_high_cut_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_piececount",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p2_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_13_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_8_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_processing_req",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_skukey",
+						"type": "String"
+					},
+					{
+						"name": "customer_name",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_3_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_14_width",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_id_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_6_prod_app_id_1",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_6_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_28_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_belt_speed",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_20_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "stats_input_cum_defect_pct",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "min_encl_humudity",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_16_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_pieces_cut",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_4_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_14_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_22_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_6_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p1_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p3_sumproductweight",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p5_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_9_width",
+						"type": "String"
+					},
+					{
+						"name": "cv_2r_temp",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_7_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_16_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_time_to_cutter",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_side",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_9_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_1_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_25_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_4_height",
+						"type": "String"
+					},
+					{
+						"name": "q-link_version",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_5_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_sumcutterbelttravel",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_23_height",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_sumscannedweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_7_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_29_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_9_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_2_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_scanned_pcs_per_min",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_1_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_20_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_value_7",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_value_8",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_value_5",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_value_6",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_12_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p6_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_2_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_18_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_sku",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_value_3",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_value_4",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_value_1",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_9_prod_app_value_2",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_p2_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_4_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_23_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "fillet_output_product_4_sku",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_26_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_22_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_8_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_21_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_3_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_13_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_6_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_27_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_14_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_14_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_11_width",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s4_p1_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_27_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_12_weight",
+						"type": "String"
+					},
+					{
+						"name": "int1_shift_spm",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s3_pieces_uncut",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_20_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_20_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_8_width",
+						"type": "String"
+					},
+					{
+						"name": "pump_runhr",
+						"type": "String"
+					},
+					{
+						"name": "cv_1r_temp",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_5_width",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_avg_cpu_%_used",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_30_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_21_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_30_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_apptype",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_type",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_17_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_17_length",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p2_product_count",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_6_product_15_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_24_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_11_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_3_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_5_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_26_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_24_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_26_height",
+						"type": "String"
+					},
+					{
+						"name": "opc_ua_tag_write_staus",
+						"type": "String"
+					},
+					{
+						"name": "min_l1_s1_p5_sumproductgrossweight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_7_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_4_product_1_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_9_product_23_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_8_product_9_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_5_product_10_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_3_product_7_weight",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_10_product_22_height",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_2_product_10_length",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_10_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_machine_last_cpu_pct_used",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_7_product_6_width",
+						"type": "String"
+					},
+					{
+						"name": "output_producttype_1_product_2_height",
+						"type": "String"
+					},
+					{
+						"name": "stats_pro_avg_scanned_wt_per_hr",
+						"type": "String"
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]",
-				"[concat(variables('factoryId'), '/datasets/DocumentDbCollection1')]"
+				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DocumentDbCollection7')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "CosmosDb1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DocumentDbCollection",
+				"typeProperties": {
+					"collectionName": "dsisampledata"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/CosmosDb1')]"
 			]
 		},
 		{
@@ -2376,6 +9325,124 @@
 				"[concat(variables('factoryId'), '/datasets/DocumentDbCollection5')]",
 				"[concat(variables('factoryId'), '/datasets/DelimitedText6')]",
 				"[concat(variables('factoryId'), '/datasets/DocumentDbCollection6')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/sampledataplc')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "sampledataplcrotatory",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "DelimitedTextSource",
+								"storeSettings": {
+									"type": "AzureBlobFSReadSettings",
+									"recursive": true
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							},
+							"sink": {
+								"type": "DocumentDbCollectionSink",
+								"nestingSeparator": ".",
+								"writeBehavior": "insert"
+							},
+							"enableStaging": false
+						},
+						"inputs": [
+							{
+								"referenceName": "DelimitedText1",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "DocumentDbCollection1",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						]
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]",
+				"[concat(variables('factoryId'), '/datasets/DocumentDbCollection1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/pipeline1')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "DSIsampleData",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "DelimitedTextSource",
+								"storeSettings": {
+									"type": "AzureBlobFSReadSettings",
+									"recursive": true
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							},
+							"sink": {
+								"type": "DocumentDbCollectionSink",
+								"nestingSeparator": ".",
+								"writeBehavior": "insert"
+							},
+							"enableStaging": false
+						},
+						"inputs": [
+							{
+								"referenceName": "DelimitedText7",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "DocumentDbCollection7",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						]
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/DelimitedText7')]",
+				"[concat(variables('factoryId'), '/datasets/DocumentDbCollection7')]"
 			]
 		}
 	]
